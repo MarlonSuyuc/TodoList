@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+}
+body {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgb(194, 206, 206);
+}
+
+.contenedor {
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 350px;
+  height: 400px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+header {
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.contenedor_ingreso {
+  display: flex;
+  justify-content: space-between;
+}
+.contenedor_ingreso input {
+  all: unset;
+  height: 35px;
+  width: 82%;
+  background-color: rgba(255, 255, 255, 0.486);
+  border: solid 1px gray;
+  padding-left: 5px;
+  font-weight: bold;
+}
+input::placeholder {
+  font-weight: 600;
+  color: rgba(131, 121, 121, 0.835);
+}
+
+.btn {
+  width: 15%;
+  height: 100%;
+  background-color: #4a00e0;
+  color: white;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn--remove {
+  background-color: #f00000;
+}
+
+.btn--add {
+  font-size: 1.5rem;
+}
+.todoList {
+  height: 100%;
+  max-height: 250px;
+  overflow-y: auto;
+}
+li {
+  height: 35px;
+  line-height: 35px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding-left: 5px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(128, 128, 128, 0.164);
+  font-weight: bold;
+  color: rgb(82, 82, 82);
+  text-transform: capitalize;
+}
+.err {
+  height: 35px;
+  line-height: 35px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  list-style: none;
+  background-color: rgb(238, 255, 0);
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+  text-transform: capitalize;
+}
+.footer {
+  padding-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgba(128, 128, 128, 0.1);
+  font-weight: bold;
+  color: rgb(82, 82, 82);
+}
+
+footer button {
+  background-color: #4a00e0;
+  border: none;
+  color: aliceblue;
+  padding: 0 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
