@@ -1,0 +1,19 @@
+{
+  "name": "sass",
+  "version": "0.0.1",
+  "description": "todo",
+  "main": "app.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/scss/style.scss ./assets/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarlonSuyuc/TodoList.git"
+  },
+  "author": "marlon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarlonSuyuc/TodoList/issues"
+  },
+  "homepage": "https://github.com/MarlonSuyuc/TodoList#readme"
+}

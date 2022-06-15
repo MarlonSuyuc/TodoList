@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>todo List</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>todo List</title>
-</head>
+  <body>
+    <div class="conteiner">
+      <h1 class="title">Todo App</h1>
+      <div class="form">
+        <input type="text" placeholder="Ingrese su tarea" />
+        <button class="btn btn--add">+</button>
+      </div>
 
-<body>
-  <div class="contenedor">
-    <header>Todo App</header>
-    <div class="contenedor_ingreso">
-      <input type="text" id="ingreso" placeholder="Ingrese su tarea" />
-      <button class="btn btn--add">+</button>
+      <div class="todo">
+        <ul>
+          <li>Tarea 1 <button class="btn btn--remove">-</button></li>
+          <!-- <li>Tarea 1 <button class="btn btn--remove">-</button></li>
+          <li>Tarea 1 <button class="btn btn--remove">-</button></li>
+          <li>Tarea 1 <button class="btn btn--remove">-</button></li> 
+          <li>Tarea 1 <button class="btn btn--remove">-</button></li> 
+          <li>Tarea 1 <button class="btn btn--remove">-</button></li>  -->
+        </ul>
+      </div>
+
+      <footer class="footer">
+        <div class="text--footer">Contador de tareas</div>
+        <button class="btn btn--clearAll">Limpiar Todo</button>
+      </footer>
     </div>
 
-    <div class="todoList">
-      <ul id="todoList">
-        <li>vhvhv<button class="btn btn--remove" id="remove">x</button></li>
-        <template id="template">
-          <li>vhvhv<button class="btn btn--remove" id="remove">x</button></li>
-        </template>
-
-      </ul>
-    </div>
-    <footer class="footer">
-      <span class="contador">Contador de tareas</span>
-      <button id="clear">Limpiar todo</button>
-    </footer>
-  </div>
-  <script src="app.js"></script>
-</body>
-
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>
