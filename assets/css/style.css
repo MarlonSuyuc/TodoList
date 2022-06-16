@@ -59,7 +59,13 @@ body {
 .todo ul {
   list-style: none;
 }
+.todo ul .error {
+  line-height: 40px;
+  background-color: yellow;
+  color: red;
+}
 .todo ul li {
+  line-height: 40px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -86,7 +92,7 @@ body {
   text-align: center;
   background: #4c00de;
   line-height: 40px;
-  width: 40px;
+  min-width: 40px;
   font-size: 1.8rem;
   color: #fff;
   font-weight: 600;

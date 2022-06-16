@@ -52,7 +52,13 @@ body {
   margin-top: 10px;
   ul {
     list-style: none;
+    .error {
+      line-height: 40px;
+      background-color: yellow;
+      color: red;
+    }
     li {
+      line-height: 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -64,6 +70,7 @@ body {
     }
   }
 }
+
 .footer {
   background: rgba(153, 153, 153, 0.35);
   padding-left: 10px;
@@ -79,7 +86,7 @@ body {
   text-align: center;
   background: #4c00de;
   line-height: 40px;
-  width: 40px;
+  min-width: 40px;
   font-size: 1.8rem;
   color: #fff;
   font-weight: 600;
