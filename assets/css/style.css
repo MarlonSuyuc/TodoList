@@ -56,24 +56,27 @@ body {
   overflow-y: auto;
   margin-top: 10px;
 }
-.todo ul {
-  list-style: none;
-}
-.todo ul .error {
-  line-height: 40px;
-  background-color: yellow;
-  color: red;
-}
-.todo ul li {
-  line-height: 40px;
+.todo .text--li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(168, 168, 168, 0.505);
   margin-bottom: 10px;
-  padding-left: 10px;
+  background-color: rgba(102, 102, 102, 0.492);
+  line-height: 40px;
+}
+.todo .text--li .li {
   color: #333;
   font-weight: 700;
+  padding-left: 10px;
+}
+
+.error {
+  font-weight: 700;
+  padding-left: 10px;
+  line-height: 40px;
+  background: yellow;
+  color: red;
+  margin-bottom: 10px;
 }
 
 .footer {
@@ -85,6 +88,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.footer .text--footer {
+  color: #333;
+  font-weight: 700;
 }
 
 .btn {
